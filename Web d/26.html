@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1> this is my heading</h1>
+        <p id="para" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sit nisi, deserunt beatae deleniti est qui dolore totam nemo cumque alias animi corporis a excepturi ipsa fugiat vitae ratione nam quos at exercitationem saepe expedita! Sapiente labore provident culpa voluptatem! Delectus incidunt est sit pariatur, corporis distinctio similique aut! Error sit explicabo necessitatibus labore tenetur, aspernatur quibusdam eos temporibus quae. Corrupti tempore sapiente in fuga rem esse deserunt aut aperiam accusamus saepe vitae, eligendi molestiae repellat expedita quasi corporis ipsam quibusdam adipisci laboriosam similique ratione fugit tempora consectetur ab! Voluptatibus ex veritatis eius nostrum consectetur non. Enim dicta, in similique animi consectetur voluptatem perferendis a itaque necessitatibus exercitationem cum nam vitae recusandae possimus fugiat dignissimos voluptate, eius eum harum quis ad facere dolorem rerum sequi. Dolorem repudiandae iusto velit veniam dolor odit harum nulla quis quos tempora at eveniet, tempore est aspernatur repellendus architecto esse enim molestiae vitae consectetur nesciunt? Rem a ullam provident labore adipisci eum sapiente laboriosam odio pariatur earum nihil quasi, voluptas eius itaque quam commodi. Aliquid nostrum ducimus itaque, corrupti numquam odit suscipit tempora aut vitae maxime expedita id, quasi, nam repellat consequatur asperiores illo a delectus obcaecati voluptatum. Ad id at deserunt explicabo, suscipit dolores earum debitis, dolorum vero et doloribus sequi sunt voluptate aliquid vitae! A recusandae asperiores numquam iure eaque quos nemo debitis culpa corporis!z </p>
+    </div>
+    <button class="btn" onclick="togglehide()" >See/hide</button>
+
+
+<br> <br> <br>
+
+   name: <input type="text" id="myname" onchange="convert()">
+
+</body>
+<script>
+let para=document.getElementById('para');
+para.addEventListener('mouseover', function run(){
+    // alert('mouse inside');
+    // para.style.display='none';
+    para.style.color="red";
+    console.log('mouse inside');
+})
+para.addEventListener('mouseout', function run(){
+    para.style.color="black";
+    console.log('mouse outside');
+})
+function togglehide(){
+    if(para.style.display!='none'){
+        para.style.display='none';
+    }
+    else
+    para.style.display='block';
+}
+
+
+function convert(){
+    var v=document.getElementById('myname');
+    v.value=v.value.toUpperCase();
+}
+
+</script>
+</html>

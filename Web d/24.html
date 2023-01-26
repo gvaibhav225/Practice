@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas: 'navbar navbar navbar navbar''section section section aside''footer footer footer footer';
+            
+            /* if write 4 navbar then other rows also have 4 things  */
+        }
+        #item{
+            border: 2px solid rgb(21, 19, 19);
+        }
+        .navbar{
+            grid-area: navbar;
+
+        }
+        .section{
+grid-area: section;
+        }
+        .aside{
+grid-area: aside;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width:300px){
+            body{
+                background-color: red;
+            }
+            .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        .aside{
+            display: none;
+        }
+
+        }
+            @media only screen and (min-width:300px) and (max-width:500px){
+            body{
+                background-color: rgb(16, 158, 16);
+            }
+            .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+        .aside{
+            display: none;
+        }
+
+        }
+        
+        @media only screen and (min-width:500px) and (max-width:800px){
+            body{
+                background-color: rgb(166, 157, 243);
+            }
+            .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer ';
+        }
+            
+
+        } 
+            @media only screen and  (min-width:800px){
+            body{
+                background-color: rgb(244, 246, 244);
+            }
+
+        }
+
+        
+
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar" id="item">
+            home contact about 
+        </div>
+        <div class="section"id="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt at dicta hic ipsum quibusdam voluptatibus vero explicabo debitis soluta possimus inventore in exercitationem placeat molestias enim voluptas numquam deleniti veritatis ea, eaque voluptate ab sint similique laborum. Dolorum illo ad, facilis, nihil soluta quibusdam doloribus cum et nobis nostrum veritatis ipsam perferendis inventore fuga minus pariatur odio animi, similique assumenda? Recusandae excepturi assumenda reiciendis eligendi pariatur, minima saepe. Excepturi quas numquam delectus! Earum repellat, voluptas asperiores cum eveniet reprehenderit dicta minus possimus. Culpa saepe, totam, maiores quas qui repellendus eaque consequuntur ratione atque et quos aspernatur! Aut voluptatem, recusandae molestiae facilis in nobis dolores fugit similique, officia accusamus fugiat! Facilis, nobis?
+        </div>
+        <div class="aside"id="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus est rerum? Aperiam deleniti omnis in ad. Eligendi velit optio perferendis ducimus quod vero, voluptate, corporis consectetur quo pariatur adipisci saepe nam illum fugiat obcaecati, suscipit inventore tenetur aliquid voluptates! Dolores excepturi consequuntur modi perspiciatis hic esse aut optio officiis nihil animi magnam laborum ratione placeat, nemo consequatur. Tempore, incidunt exercitationem hic praesentium placeat voluptates porro ullam, tenetur autem quis corrupti consequatur deserunt? Eligendi temporibus autem unde obcaecati ut, minus ex incidunt quibusdam hic asperiores, tempora eos nemo fuga nesciunt odit eum sit. Similique, reiciendis repellendus? Accusamus consectetur adipisci explicabo officia reprehenderit perferendis voluptatum ea, omnis amet exercitationem qui incidunt neque.
+
+        </div>
+        <div class="footer" id="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem culpa, dignissimos molestias, distinctio veritatis labore eligendi praesentium asperiores perferendis, rem dolore omnis. Molestias.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 100px auto 100px; */
+
+            /* the above one will create 3 columns in way that it will give 100px to 1st auto to 2nd and 100 to third  */
+
+            /* grid-template-columns: auto auto auto; */
+
+            /* grid-template-columns: repeat(10,auto); */
+
+            /* if want that these grids be responsive then use  */
+            grid-template-columns: repeat(auto-fit, minmax(400px,1fr) );
+            grid-gap: 2rem;
+        }
+        .box{
+            border: 2px solid red;
+        }
+        .box:first-child{
+            /* grid-column: 1/span 3;
+            grid-row: 1/span 3; */
+
+        }
+
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">0</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">0</div>
+    </header>
+    
+</body>
+</html>

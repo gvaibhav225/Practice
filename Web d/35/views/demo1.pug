@@ -1,0 +1,50 @@
+<!-- //near live server there is pug written click that then search html and then write below  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    style
+      include ../style.css
+    <!-- above one is way to add css file in pug andd ../ is for coming back to a folder  --> 
+ 
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="box" >  <a href="/">Home</a>  </li>
+                <li class="box" >  <a href="/contact">Contact</a>  </li>
+                <li class="box" >  <a href="/services">services</a>  </li>
+            </ul>
+          
+        </nav>
+    </header>
+    <h1>Hurry! Submit now  </h1>
+    <section>
+    
+        <form action="/form" method="post">
+            <div>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div>
+                <input type="text" name="age" placeholder="Enter your age">
+            </div>
+            <div>
+                <input type="text" name="gender" placeholder="Enter your gender">
+            </div>
+            <div>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Enter message"></textarea>
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+    
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #time{
+            border:  2px solid red;
+            padding: 34px;
+            width: 700px;
+            margin: auto;
+            text-align: center;
+            background-color: beige;
+            font-weight: bold;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div id="time"></div>
+    <div id="timee"></div>
+</body>
+<script>
+    function disptime(){
+         time=new Date();
+        //  console.log(time);
+         document.getElementById('time').innerHTML=time;
+    }
+    setInterval(disptime,1000);
+
+    function greet(name){
+        console.log('hello'+name);
+    }
+    setTimeout(greet,5000,'vaibhav');
+
+    // settimeout prints value after time and setinterval prints value after every interval 
+
+    //4 ways of creating obj:
+
+    //1)
+
+    // var car={
+    //     price:233,
+    //     name:"swift"
+    // }
+
+    //2) using new keyword
+
+    // function car(name,price){
+    //     this.name=name;
+    //     this.price=price;
+    // }
+    // let c1=new car("hhh",6666);
+
+    //3 using object.create method
+
+    // var car={
+    //     price:233,
+    //     name:"swift"
+    // }
+    // var car2=Object.create(car);
+    // car2.name="hhh";
+
+    //4 using class
+
+//     class car{
+//         constructor(name,price){
+//             this.name=name;
+//             this.price=price;
+//         }
+//     }
+// let car1 =new car("bh",666);
+
+  
+
+
+
+
+// 3 ways to crea array
+
+// const a=[];
+// a[0]=4;
+
+// const a=new Array("fff","bhhh");
+
+// const a=["bhh","hhh"];
+
+
+    let m = Math;
+    console.log(m);
+
+</script>
+</html>

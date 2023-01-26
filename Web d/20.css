@@ -1,0 +1,68 @@
+/* body{
+    background-color: blue;
+} */
+/* it will be req if opening through phone and for that we linkeed thiss css with 20th using media  */
+
+.col{
+    flex-direction: column;
+    margin: -61px auto;
+}
+.cl , .contact{
+    overflow: hidden;
+}
+
+.navbar{
+    flex-direction: column;
+    text-align: centers;
+    align-items: center;
+}
+.navbar li{
+    align-items: center ;
+}
+.box2::before{
+ top: 0%;
+ height: 26%;
+}
+.foodt img{
+    width: 30%;
+}
+.box2 h1{
+    font-size: 1rem;
+}
+.box2 p{
+    font-size: 0.7rem;
+}
+.foodt{
+    width: 60%;
+    margin: 10px auto;
+}
+#service{
+    margin: 76px auto;
+}
+.cl::before{
+    top: 1076px;
+    height: 23%;
+}
+.clients{
+    top: -42px;
+}
+.clientss img {
+    margin: -213px 10px;
+    width: 98px;
+    height: 36px;
+}
+.contact::before{
+    top: 1283px;
+}
+.cont{
+    top: -79px;
+}
+.form{
+    position: relative;
+    top: -116px;
+    width: 317px;
+    height: 266px;
+}
+footer{
+    margin: -26px auto;
+}

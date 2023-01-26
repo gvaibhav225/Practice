@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        .submit{
+            position: absolute;
+            top: 1%;
+            right: 1%;
+            color: white;
+            background-color: red;
+            border-radius: 20px;
+            padding: 7px;
+            width: 130px;
+        }
+        .submit:hover{
+            color: rgb(9, 9, 9);
+        }
+        .back::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 50px;
+            z-index: -1;
+            top: 0%;
+            width: 100%;
+        }
+        .back p{
+            color: white;
+            margin: 15px 50px;
+            font-size: 20px;
+        }
+        .back p:hover{
+            color: red;
+        }
+        .navbar ul{
+            display: flex;
+        }
+        .navbar li{
+            list-style: none;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: rgb(2, 51, 51);
+            margin: 20px;
+            border: 2px solid rgb(13, 112, 211);
+            padding: 5px 23px;
+            border-radius: 20px;
+        }
+        ul{
+            margin: 30px auto;
+            width: 300px;
+            text-align: center;
+            justify-content: center;
+        }
+        .box1, .box2{
+            display: flex;
+            width: 800px;
+            margin: 10px auto;
+            justify-content: center;
+            
+        }
+        img{
+            width: 280px;
+            height: 250px;
+            margin: 20px 30px;
+        }
+        .navbar li a:hover{
+            color: rgb(224, 31, 6);
+            background-color: black;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="back">
+        <p>Bootstrap Gallary</p>
+        <button class="submit">Download Now</button>
+    </div>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="">All</a></li>
+                <li><a href="">Beautiful</a></li>
+                <li><a href="">Creative</a></li>
+                <li><a href="">Cool</a></li>
+                <li><a href="">Awesome</a></li>
+            </ul>
+
+
+        </nav>
+
+    </div>
+
+    <div class="box1">
+            <img src="https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="140px">
+            <img src="https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="140px">
+
+            <img src="https://images.pexels.com/photos/593655/pexels-photo-593655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="140px">
+
+            <img src="https://images.pexels.com/photos/135940/pexels-photo-135940.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" width="140px">
+
+    </div>
+    <div class="box2">
+        <img src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="140px">
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="140px">
+
+        <img src="https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="140px">
+
+        <img src="https://images.pexels.com/photos/206648/pexels-photo-206648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="140px">
+
+</div>
+
+
+   
+</body>
+</html>

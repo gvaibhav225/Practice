@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is first javascript </h1>
+        <div class="ce" id="c"></div>
+        <div class="box">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, porro in! Quos qui eveniet voluptatem, minima asperiores explicabo, dolorem commodi sunt, in atque maiores veritatis sapiente dicta. Nobis, labore omnis?
+        </div>
+    </div>
+    <div class="container">
+        another one 
+    </div>
+    <script>
+        var a=65;
+        var b="vaibhav";
+        console.log(a);
+        console.log(b);   //var for declaring variables and console.log for printing or showing in console 
+        var s='ddd"gg';
+        var w=new String("ttt");
+        console.log(s);
+        console.log(w);
+        var c=` ${b} we can write `
+        console.log(c);
+        document.getElementById('c').innerHTML='<h3> this is another way of adding in html </h3>'
+
+        // if used class and multiple class are given then if want first one use document.querySelector above 
+
+        var a=33;
+        // we can redefine elements in var as we overrided a from 65 to 33
+        // the above thing can be stopped by using let function 
+        let d=33;
+        console.log(d);
+        // let d=44;  //we cant do this
+// we can change it within a block only 
+{
+    let d=55;
+    console.log(d);
+}
+
+
+        const q="this cant be changed in any way";
+        console.log(q);
+
+    let names=[1,2,3];
+    console.log(names);
+    let namess=new Array(23,44);
+    console.log(namess);
+    let namesss=new Array(23);
+    console.log(namesss);
+    names.push(23);
+    console.log(names);
+
+
+    let employee={
+       name:"v",
+     age:20,
+
+    }
+    console.log(employee);
+
+    // alert('this is a message that will pop up first');
+    // let n=prompt('enter your name','guest');
+    // console.log(n);
+    let deletepost=confirm('do you really want to dlt this post');
+    // console.log(deletepost);
+if(deletepost){
+    console.log('your post dlted');
+}
+else{
+    console.log('your post not dlted');
+}
+let fruits=['mango','banana','orange'];
+for(element of fruits){
+    console.log(element);
+}
+
+
+
+
+    </script>
+</body>
+</html>

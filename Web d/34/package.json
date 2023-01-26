@@ -1,0 +1,17 @@
+{
+  "name": "34",
+  "version": "1.0.0",
+  "description": "this is first first try",
+  "main": "34.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
